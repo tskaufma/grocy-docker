@@ -17,6 +17,8 @@ services:
     read_only: true
     tmpfs:
       - /tmp
+    env_file:
+      - frontend.env
     restart: unless-stopped
 
   backend:
